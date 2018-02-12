@@ -8,9 +8,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CountriesEntity extends BaseEntity {
-    private static String bd    = "bands";
+    private static String bd    = "band";
     private static String table = "countries";
-    private static String DEFAULT_SQL = "SELECT * FROM " + bd + "." + table;
+    private static String DEFAULT_SQL = "SELECT * FROM " + bd + "." + table + " ";
 
     //    General Method to executeQuery
     private List<Country> findByCriteria(String sql) {

@@ -8,9 +8,18 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
+    <title>Home</title>
   </head>
   <body>
-  $END$
+    <h1>Login</h1>
+    <form action="users" method="post">
+        <fieldset>
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" value="${user.username}"/>
+          <label for="username">Password</label>
+          <input type="text" name="password" id="password" value="${user.password}"/>
+          <input type="submit">
+        </fieldset>
+    </form>
   </body>
 </html>
